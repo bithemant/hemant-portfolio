@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hemant Singh - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Print Settings */
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+
+            .resume-container {
+                padding: 20px;
+                max-width: 100%;
+                border: none;
+                box-shadow: none;
+            }
+
+            @page {
+                margin: 1cm;
+            }
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 2px solid #ccc;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .header-content p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .contact-info {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .contact-info span {
+            margin-right: 15px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .item-desc {
+            margin-top: 5px;
+            font-size: 13px;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+        }
+
+        ul {
+            margin: 5px 0 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <!-- HEADER -->
+        <header>
+            <!-- IMPORTANT: Replace the 'src' attribute below with the relative path to your downloaded LinkedIn Profile Photo, e.g., 'profile.jpg' -->
+            <img src="https://ui-avatars.com/api/?name=Hemant+Singh&background=0D8ABC&color=fff&size=200"
+                alt="Hemant Singh" class="profile-img">
+            <div class="header-content">
+                <h1>Hemant Singh</h1>
+                <p>B.Tech IT Student | Software Developer (AI/ML, DevOps, Cybersecurity)</p>
+                <div class="contact-info">
+                    <span>📍 Mumbai, India</span>
+                    <span>💻 github.com/bithemant</span>
+                    <span>🔗 linkedin.com/in/hemant-singh-61a465247</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <div class="section">
+            <div class="section-title">Summary</div>
+            <p class="item-desc">
+                Passionate Information Technology student and Software Developer with a keen interest in DevOps,
+                DevSecOps, AI/ML, IoT, and Cybersecurity. Building end-to-end intelligent solutions — from clean Python
+                code and CI/CD pipelines to real-world AI applications and security research.
+            </p>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">B.Tech in Information Technology</span>
+                    <span class="item-date">2023 — Present</span>
+                </div>
+                <div class="item-subtitle">University of Mumbai | Mumbai, India</div>
+                <p class="item-desc">Focus on AI/ML, Data Science, and Cybersecurity. Building hands-on projects
+                    combining intelligent systems with practical security solutions.</p>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="section">
+            <div class="section-title">Experience & Internships</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Cybersecurity Intern</span>
+                    <span class="item-date">Aug 2023 — Feb 2024</span>
+                </div>
+                <div class="item-subtitle">Tutelr Infosec Pvt. Ltd.</div>
+                <ul>
+                    <li>Trained in Cloud Security, DFIR (Digital Forensics & Incident Response), Penetration Testing,
+                        and Blue Teaming.</li>
+                    <li>Gained hands-on experience in identifying and mitigating security threats across cloud and
+                        on-premise environments.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">IoT Intern</span>
+                    <span class="item-date">Aug 2023 — Mar 2024</span>
+                </div>
+                <div class="item-subtitle">CADD Centre Training Services Pvt Ltd (Livewire)</div>
+                <ul>
+                    <li>Gained practical exposure to IoT concepts and hardware–software interfacing.</li>
+                    <li>Worked on building connected systems, sensor integration, and embedded communication protocols.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Penetration Testing Intern</span>
+                    <span class="item-date">Sep 2023 — Oct 2023</span>
+                </div>
+                <div class="item-subtitle">HackersForYou</div>
+                <ul>
+                    <li>Learned fundamentals of penetration testing and vulnerability assessment.</li>
+                    <li>Practiced identifying common web application vulnerabilities (OWASP Top 10) and remediation
+                        techniques.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="section">
+            <div class="section-title">Selected Projects</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Honeypot Virtualization System</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <p class="item-desc">Web-based honeypot emulating a virtual file system and shell, logging attacker
+                    interactions in real-time. Built with Python, Flask, and WebSockets.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Business Growth Analyzer (Web-OLAP)</span>
+                </div>
+                <p class="item-desc">OLAP web app for drill-down, roll-up, and slice-and-dice operations with
+                    interactive Plotly visualizations. (Flask, Plotly, Analytics)</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Computer Vision RPS Game</span>
+                </div>
+                <p class="item-desc">Real-time Rock-Paper-Scissors powered by hand gesture recognition using OpenCV and
+                    MediaPipe.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Flask Load Balancer</span>
+                </div>
+                <p class="item-desc">Custom implementation distributing requests across multiple backend servers,
+                    simulating real-world traffic patterns.</p>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">Languages</div>
+                <div>Python, JavaScript, HTML/CSS, SQL</div>
+
+                <div class="skill-category">Frameworks & Libs</div>
+                <div>Flask, OpenCV, MediaPipe, Plotly, TensorFlow, Pandas, NumPy</div>
+
+                <div class="skill-category">Tools & DevOps</div>
+                <div>Docker, Git, Linux, Kubernetes, Jenkins, CI/CD, Cybersecurity, Networking</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
